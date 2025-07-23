@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form Practice</title>
+  </head>
+  <body>
+
+    <h1>Student Details</h1>
+
+    <form>
+
+      <!--Spacing-->
+      <br><br>
+
+      <!--Name-->
+      <label for="first-name">First Name: </label>
+      <input type="text" name="first-name" value="">
+
+      <label for="middle-name">Middle Name: </label>
+      <input type="text" name="middle-name" value="">
+
+      <label for="last-name">Last Name: </label>
+      <input type="text" name="last-name" value="">
+
+      <!--Spacing-->
+      <br><br>
+
+      <!--Table-->
+      <table>
+        <tr>
+          <td>
+            <!--Course-->
+            <h3>Choose a Course: </h3>
+            <input type="radio" name="Course" value="COMP" id="comp">
+            <label for="comp">Computer Engineering</label><br>
+            <input type="radio" name="Course" value="IT" id="it">
+            <label for="comp">Information Technology Engineering</label><br>
+            <input type="radio" name="Course" value="ETC" id="etc">
+            <label for="comp">Electronics and Technical Communication Engineering</label><br>
+            <input type="radio" name="Course" value="ENE" id="ene">
+            <label for="comp">Electrical and Electronics Engineering</label><br>
+          </td>
+          <td>
+            <!--College-->
+            <h3>Choose the College(s): </h3>
+            <input type="checkbox" name="College" value="GEC" id="gec">
+            <label for="gec">Govt. of Goa College of Engineering</label><br>
+            <input type="checkbox" name="College" value="DBCE" id="dbce">
+            <label for="dbce">Don Bosco College of Engineering</label><br>
+            <input type="checkbox" name="College" value="PCCE" id="pcce">
+            <label for="pcce">Padre Conceicao College of Engineering</label><br>
+            <input type="checkbox" name="College" value="RIT" id="rit">
+            <label for="rit">Rayeshwar Institute of Technology</label><br>
+          </td>
+        </tr>
+      </table>
+
+      <!--Spacing-->
+      <br><br>
+
+      <!--Category-->
+      <label for="category">Category: </label>
+      <select id="category" name="catg">      
+        <option value="ST">ST</option>
+        <option value="SC">SC</option>
+        <option value="OBC">OBC</option>
+        <option value="GENERAL-EWS">GENERAL-EWS</option>
+        <option value="GENERAL">GENERAL</option>
+        <option value="OTHERS">Others</option>
+      </select>
+
+      <!--Spacing-->
+      <br><br>
+
+      <h3>Reason</h3>
+      <textarea rows="4" cols="60" name="reason" placeholder="Enter your reason to get this branch"></textarea>
+
+      <!--Spacing-->
+      <br><br>
+
+      <!--Submit-->
+      <input type="submit" value="Submit">
+
+    </form>
+
+  </body>
+</html>

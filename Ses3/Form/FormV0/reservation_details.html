@@ -7,11 +7,6 @@
   </head>
   <body>
 
-    <audio controls loop autoplay>
-      <source src="./jazz_smooth.mp3" type="audio/mpeg">
-    </audio>
-
-      
     <table align="center">
       <tr>
         <td><h1>RESERVATION DETAILS</h1></td>
@@ -39,17 +34,17 @@
         </tr>
         <tr>
           <td><label for="email"><h3>Email</h3></label></td>
-          <td style="align: right; padding-left: 118px" colspan="2"><h3>Phone Number</h3></td>
+          <td><h3>Phone Number</h3></td>
         </tr>
         <tr>
           <td><input type="text" name="email" placeholder="ex: myname@example.com"></td>
-          <td align="right"><input type="text" name="area-code" style="width: 60px;"></td>
+          <td><input type="text" name="area-code"></td>
           <td><input type="tel" name="phone"></td>
         </tr>
         <tr>
           <td></td>
-          <td align="right"><label for="area-code">Area Code</label></td>
-          <td><label for="phone" style="align: right;">Phone Number</label></td>
+          <td><label for="area-code">Area Code</label></td>
+          <td><label for="phone">Phone Number</label></td>
         </tr>
         <tr>
           <td><h3>Address</h3></td>
@@ -70,7 +65,7 @@
           <tr><td><br><br></td></tr>
         </table>
       </table>
-      <table align="center" cellspacing="0" cellpadding="0" style="border-spacing: 0;">
+      <table align="center">
         <tr>
           <td colspan="2"><input type="text" name="city" size="33"></td>
           <td><input type="text" name="state-province" size="34"></td>
@@ -300,62 +295,12 @@
           <label for="dom">Domestic</label></td>
         </tr>
         <tr>
-          <td><h3>Departure Date & Time</h3></td>
-        </tr>
-      </table>
-      <table style="border-collapse: collapse;" align="center">
-        <tr>
-          <td style="padding: 25px;"><input type="text" id="month" name="month" style="width: 40px;"></td>
-          <td style="padding: 25px;"><input type="text" id="day" name="day" style="width: 40px;"></td>
-          <td style="padding: 25px;"><input type="text" id="year" name="year" style="width: 40px;"></td>
-          <td style="padding: 25px;"><input type="text" id="" name="" style="width: 40px;"></td>
-          <td style="padding: 25px;"><input type="text" id="hr-mn" name="hr-mn" style="width: 40px;"></td>
-          <td style="padding: 25px;">
-            <select id="time" name="time">
-              <option value="AM">AM</option>
-              <option value="PM">PM</option>
-            </select>
-          </td>
+          <td><h3>Return Date & Time</h3></td>
         </tr>
         <tr>
-          <td style="padding: 25px"><label for="month">Month</label></td>
-          <td style="padding: 25px"><label for="day">Day</label></td>
-          <td style="padding: 25px"><label for="year">Year</label></td>
-          <td style="padding: 25px"><label for=""></label></td>
-          <td style="padding: 25px"><label for="hr-mn">Hour Minutes</label></td>
-          <td style="padding: 25px"><label for="month"></label></td>
+          <td colspan="2"><input type="date" id="date" name="date" size="33"></td>
+          <td><input type="time" id="departure-time" name="departure-time" size="34"></td>
         </tr>
-        <tr>
-          <td colspan="6" style="padding-left: 25px"><h3>Return Date & Time</h3></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </table>
-
-      <table style="border-collapse: collapse;" align="center">
-        <tr>
-          <td style="padding: 25px;"><input type="text" id="month" name="month" style="width: 40px;"></td>
-          <td style="padding: 25px;"><input type="text" id="day" name="day" style="width: 40px;"></td>
-          <td style="padding: 25px;"><input type="text" id="year" name="year" style="width: 40px;"></td>
-          <td style="padding: 25px;"><input type="text" id="" name="" style="width: 40px;"></td>
-          <td style="padding: 25px;"><input type="text" id="hr-mn" name="hr-mn" style="width: 40px;"></td>
-          <td style="padding: 25px;">
-            <select id="time" name="time">
-              <option value="AM">AM</option>
-              <option value="PM">PM</option>
-            </select>
-          </td>
-        </tr>
-        <tr>
-          <td style="padding: 25px"><label for="month">Month</label></td>
-          <td style="padding: 25px"><label for="day">Day</label></td>
-          <td style="padding: 25px"><label for="year">Year</label></td>
-          <td style="padding: 25px"><label for=""></label></td>
-          <td style="padding: 25px"><label for="hr-mn">Hour Minutes</label></td>
-          <td style="padding: 25px"><label for="month"></label></td>
-        </tr>
-      </table>
-      <table align="center">
         <tr><td><br><br></td></tr>
         <tr>
           <td colspan="2"><label for="dept-from"><h3>Departing From</h3></label></td>
@@ -806,8 +751,16 @@
           <td>
             <select id="fare" name="fare">
               <option value="">Please Select</option>
-              <option value="OW">One Way</option>
-              <option value="TW">Two Way</option>
+              <option value="100">₹100</option>
+              <option value="250">₹250</option>
+              <option value="500">₹500</option>
+              <option value="750">₹750</option>
+              <option value="1000">₹1,000</option>
+              <option value="1500">₹1,500</option>
+              <option value="2000">₹2,000</option>
+              <option value="2500">₹2,500</option>
+              <option value="3000">₹3,000</option>
+              <option value="5000">₹5,000</option>
               <option value="">--------------------------------------------------------------</option>
             </select>
           </td>

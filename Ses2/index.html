@@ -1,136 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-  </head>
-  <body>
-    <table>
-      <!--Row 0-->
-      <tr>
-        <td></td>
-        <td>
-          <nav class="navbar">
-            <ul class="nav-links">
-              <li><a href="#home">HOME</a></li>
-              <li><a href="#about">ABOUT</a></li>
-              <li><a href="#projects">PROJECTS</a></li>
-              <li><a href="#contact">CONTACT</a></li>
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+</head>
+<body>
+<table width="95%" align="center" cellspacing="10">
+  <tr>
+    <td align="left" width="65%">
+      <h1>Johniton</h1>
+      <p>Web Developer | Designer | Freelancer</p>
+      <table cellspacing="10">
+        <tr>
+          <td><a href="#about">About</a></td>
+          <td><a href="#projects">Projects</a></td>
+          <td><a href="#contact">Contact</a></td>
+          <td><a href="#education">Education</a></td>
+        </tr>
+      </table>
+    </td>
+
+    <!-- Spacer column -->
+    <td width="5%"></td>
+
+    <td align="center" width="30%">
+      <table>
+        <tr>
+          <td align="center">
+            <img src="assets/assets/profilepic.png" alt="Profile" width="100%">
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+  <hr width="100%">
+
+  <table width="80%" align="center" cellpadding="10">
+    <tr>
+      <td>
+        <h2 id="about">About Me</h2>
+        <p>Age: 19<br>I’m passionate about coding, love playing football, and enjoy constantly learning new things. I strive to be an all-rounder—someone who’s not just technically strong but also adaptable, curious, and versatile in any challenge that comes my way.Currently i am learning machine learning</p>
+      </td>
+    </tr>
+  </table>
+
+  <hr width="100%">
+
+  <table width="80%" align="center" cellpadding="10">
+    <tr>
+      <td>
+        <h2 id="projects">Projects</h2>
+        <table width="100%" cellspacing="10" cellpadding="10" align="center">
+          <tr>
+            <td>
+              <h3>C++</h3>
+              <h4>Inventory management</h4>
+              <p>Helps keep track of the inventory.</p>
+              <a href="https://github.com/johniton/cpp_practice/tree/main/practice_programs/inventory">View Project</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h3>Student Management System</h3>
+              <p>Helps keep track of students and their marks.</p>
+              <a href="https://github.com/johniton/cpp_practice/tree/main/practice_programs/inventory">View Project</a>
+            </td>
+          </tr>
+        </table>
+        <hr>
+        <h3>Flutter Projects</h3>
+        <table width="100%" cellspacing="20" align="center">
+          <tr>
+            <td align="center">
+              <img src="./assets/furniture.jpeg.jpe" alt="" width="150">
+              <h3>Furniture Webapp</h3>
+              <p>Webapp to buy furniture online.</p>
+              <a href="https://github.com/johniton/App_dev/tree/main/furnitur">View Project</a>
+            </td>
+            <td align="center">
+              <img src="./assets/notes.png" alt="" width="150">
+              <h3>Notes</h3>
+              <p>Webapp to save notes online.</p>
+              <a href="https://github.com/johniton/App_dev/tree/main/notes_app">View Project</a>
+            </td>
+            <td align="center">
+              <img src="./assets/expense.png" alt="" width="150">
+              <h3>Expense Tracker</h3>
+              <p>Webapp to record expenses.</p>
+              <a href="https://github.com/johniton/App_dev/tree/main/expense_tracker">View Project</a>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+  <hr width="100%">
+
+<table width="70%" align="center" cellpadding="10">
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+            <h3 id="education">EDUCATION</h3>
+            <ul>
+              <li>My Education qualifications are as follows</li>
             </ul>
-          </nav>
-        </td>
-      </tr>
-      <!--Row 1-->
-      <tr>
-        <td>
-          <h1>Hi, I'm Harsh Gaonker</h1>
-        </td>
-      </tr>
-      <!--Row 2-->
-      <tr>
-        <td>
-          <h2 id="about-me">About Me</h2>
-          <p class="brief">I'm a self-taught programmer, trying to build a strong foundation in computer engineering and driven by a deep desire to master technologies.<br>
-          I focus on building a deep understanding of systems — from low-level programming to high-level architecture — with a hands-on,<br> curiosity-driven approach.
-          I can work with HTML, CSS, JS, ReactJS, ExpressJS, C/C++, Python. </p>
-        </td>
-        <td>
-          <img src="./User.jpg" width="300" height="300">
-        </td>
-      </tr>
-      <!--Row 3-->
-      <tr>
-        <td></td>
-        <td>
-          <h3 class="brief">Im currently learning Machine Learning!</h3>
-        </td>
-      </tr>
-      <!--Row 4-->
-      <tr>
-        <td>
-          <table>
-            <thead id="table-head">
-            <tr>
-              <th><h4>Skills</h4></th>
-              <th><h4>Proficiency</h4></th>
-            </tr>
-            </thead>
-            <tbody id="table-body">
-              <tr>
-                <td>C/C++</td>
-                <td>80%</td>
-              </tr>
-              <tr>
-                <td>Javascript</td>
-                <td>70%</td>
-              </tr>
-              <tr>
-                <td>Python</td>
-                <td>90%</td>
-              </tr>
-              <tr>
-                <td>Machine Learning</td>
-                <td style="font-weight: bold;">Currently Learning</td>
-              </tr>
-              <tr>
-                <td>React JS</td>
-                <td>60%</td>
-              </tr>
-              <tr>
-                <td>Express JS</td>
-                <td>60%</td>
-              </tr>
-              <tr>
-                <td>Arch Linux</td>
-                <td>65%</td>
-              </tr>
-              <tr>
-                <td>Typescript</td>
-                <td>60%</td>
-              </tr>
-              <tr>
-                <td>Java</td>
-                <td>20%</td>
-              </tr>
-            </tbody>
-          </table>
-        </td>
-        <td>
-          <h2 id="project">Projects</h2>
-          <ul id="project-list">
-            <li><a href="https://github.com/HarshF40/Terminal-games">Terminal-games - Simple terminal games in C++</a></li>
-            <li><a href="https://github.com/HarshF40/ESP32-Controller">ESP32-Controller - Using C++ and SDL</a></li>
-            <li><a href="https://github.com/HarshF40/umous">umous - A productivity enhancer app - (Hackathon Winning Project)</a></li>
-            <li><a href="https://github.com/HarshF40/FuelPrice-Extractor">FuelPrice-Extractor - Simple Web Scraping</a></li>
-            <li><a href="https://github.com/HarshF40/ScrapCo">ScrapCo - Scrap Management Flow</a></li>
-          </ul>
-        </td>
-      </tr>
-      <!--Row 5-->
-      <tr>
-        <td>
-	      <h1>Other Information</h1>
-	      <ul id="#other-info">
-          <li><a href="./education.html">Education</a></li>
-	      </ul>
-        </td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>
-            <footer id="contact">
-                <h2 id="contact-head">Contact Details</h2>
-                <ul id="ways">
-                  <li><h5>Email:</h5><h6> harshgaonkar57@gmail.com</h6></li>
-                  <li><h5>Phone:</h5><h6> +91 855 193 7159</h6></li>
-                  <li><a href="https://www.linkedin.com/in/harsh-gaonker-941a90327/">LinkedIn</a></li>
-                  <li><a href="https://github.com/HarshF40">GitHub</a></li>
-                </ul>
-          </footer>
-        </td>
-      </tr>
-    </table>
-  </body>
+            <ul>
+              <li>12th distinction</li>
+              <li>BE in Computer Engineering</li>
+              <li>ME in Computer Engineering</li>
+            </ul>
+          </td>
+           <td width="50%"></td>
+          <td>
+            <h3>PERCENTAGES</h3>
+            <ol>
+              <li>10th % = 83%</li>
+              <li>12th % = 87%</li>
+              <li>Sem1 SGPA = 9.3</li>
+            </ol>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+  <hr width="100%">
+
+  <table width="80%" align="center" cellpadding="10" id="contact">
+    <tr>
+      <td align="center">
+        <h2>Contact</h2>
+        <p>Email: johnitoncodes@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/johniton">Profile</a></p>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%">
+    <tr>
+      <td align="center">
+        <p>&copy; 2025 Johniton. All rights reserved.</p>
+        <a href="#">Go to Start</a>
+      </td>
+    </tr>
+  </table>
+</body>
 </html>
+

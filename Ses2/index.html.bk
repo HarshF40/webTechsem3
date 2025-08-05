@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+</head>
+<body>
+  <table width="95%" align="center">
+    <tr>
+      <td>
+        <h1>Johniton</h1>
+        <p>Web Developer | Designer | Freelancer</p>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a href="#education">Education</a>
+      </td>
+      <td align="right">
+        <img src="assets/assets/profilepic.png" alt="Profile" width="33%">
+      </td>
+    </tr>
+  </table>
+<hr>
+  <table>
+    <h2>About Me</h2>
+    <p>age: 19<br>Hobbies: football and coding</p>
+  </table>
+  <table>
+    <h2 id="projects">Projects</h2>
+    <hr>
+    <table>
+      <td>
+      <h3>C++</h3>
+      <h4>Inventory management</h4>
+      <p>helps keep track of the Inventory.</p>
+      <a href="https://github.com/johniton/cpp_practice/tree/main/practice_programs/inventory">View Project</a>
+      </td>
+    </table>
+    <table>
+      <h3>Student management system</h3>
+      <p>Hepls keep track of the students and their marks</p>
+      <a href="https://github.com/johniton/cpp_practice/tree/main/practice_programs/inventory">View Project</a>
+      <hr>
+      </td>
+    </table>
+    <table>
+      <td><h3>Flutter Projects</h3>
+      <p>List of my Flutter projects.</p></td>
+      <table>
+        <td>
+          <img src="./assets/furniture.jpeg.jpe" alt="" width="33%" height="auto">
+          <h3>Furniture webapp</h3>
+          <p>Webapp to buy furniture online.</p>
+          <a href="https://github.com/johniton/App_dev/tree/main/furnitur">View Project</a>
+        </td>
+        <td>
+          <img src="./assets/notes.png" alt="" width="33%" height="auto">
+          <h3>Notes</h3>
+          <p>Webapp to save notes online</p>
+          <a href="https://github.com/johniton/App_dev/tree/main/notes_app">View Project</a>
+        </td>
+        <td>
+          <img src="./assets/expense.png" alt="" width="33%" height="auto">
+          <h3>Expense tracker</h3>
+          <p>Webapp to make record of the expenses</p>
+          <a href="https://github.com/johniton/App_dev/tree/main/expense_tracker">View Project</a>
+        </td>
+      </table>
+    </table>
+  </table>
+<hr>
+          <h3 id="education">EDUCATION</h3>
+        <dl>
+		<li>My Education qualifications are as follows</li>
+        </dl>
+        <ul>
+            <li>12th distinction</li>
+            <li>BE in Computer enginneering</li>
+            <li>ME in computer enginneering</li>
+        </ul>
+        <br> <br>
+        <h3 >PERCENTAGES</h3>
+        <ol>
+            <li>10th % = 83%</li>
+            <li>12th % = 87%</li>
+            <li>sem1 sgpa = 9.3</li>
+        </ol>
+        <br><br>
+  <table id="contact">
+    <h2>Contact</h2>
+    <p>Email: johnitoncodes@gmail.com</p>
+    <p>GITHUB: <a href="https://github.com/johniton">Profile</a></p>
+  </table>
+    <p>&copy; 2025 Johniton. All rights reserved.</p>
+    <a href="#">Go to Start</a>
+</body>
+</html>

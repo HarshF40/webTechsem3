@@ -56,7 +56,6 @@ void Matrix::makeMatrix(int val) {
             arr[i][j] = val;
         }
     }
-
 }
 
 bool Matrix::isEqualTo(const Matrix& mat) {
@@ -107,13 +106,43 @@ std::optional<Matrix> Matrix::multiply(const Matrix& mat) const {
     return ans;
 }
 
+void Matrix::addRow(int *row) {
+    int **newArr = new int*[rows + 1];
+    
+    for(int i = 0; i < rows; i++) newArr[i] = arr[i];
+
+    newArr[rows] = new int[columns];
+    for(int j = 0; j < columns; j++) {
+        newArr[rows][j] = row[j]; 
+    }
+
+    delete[] arr;
+    arr = newArr;
+    rows++; 
+}
+
+void Matrix::addColumn(int *column) {
+
+    int **newArr = new int*[rows];
+
+    for(int i=0; i<rows; i++) {
+        int *newColumn = new int[columns + 1];
+        for(int j=0; j<columns; j++) newColumn[j] = arr[i][j];
+        newColumn[columns] = column[i];
+        newArr[i] = newColumn;
+    }
+
+    delete[] arr;
+    arr = newArr;
+    columns++;
+}
 /////////////////////////////////////////////////////////////
 
 int main() {
-    Matrix mat1(3, 2);
-    Matrix mat2(2, 3);
+    Matrix mat1(3, 3);
+    // Matrix mat2(2, 3);
 
-    std::cout<< "\n" << "Are both matrices equal?: " << (mat1.isEqualTo(mat2) ? "True" : "False") << "\n";
+    // std::cout<< "\n" << "Are both matrices equal?: " << (mat1.isEqualTo(mat2) ? "True" : "False") << "\n";
 
 //    std::optional<Matrix> addition = mat1.add(mat2);
 //    if(!addition) {
@@ -129,12 +158,17 @@ int main() {
 //    }
 //    subtraction->displayMatrix();
 
-    std::optional<Matrix> multiplication = mat1.multiply(mat2);
-    if(!multiplication) {
-        std::cerr << "Error occurred while multiplying the matrices." << std::endl;
-        return -1;
-    }
-    multiplication->displayMatrix();
+//    std::optional<Matrix> multiplication = mat1.multiply(mat2);
+//    if(!multiplication) {
+//        std::cerr << "Error occurred while multiplying the matrices." << std::endl;
+//        return -1;
+//    }
+//    multiplication->displayMatrix();
+    int arr[] = {1, 2, 3};
+    mat1.addRow(arr);
+    int arr2[] = {1, 2, 3, 4};
+    mat1.addColumn(arr2);
+    mat1.displayMatrix();
 
     return 0;
 }

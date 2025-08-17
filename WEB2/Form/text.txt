@@ -1,0 +1,60 @@
+<form> — container that holds all the input fields and buttons for collecting data
+ Attributes:
+  - action — URL where the form data will be sent
+  - method — HTTP method to use (GET or POST)
+  - target — where to open the response (_self, _blank, etc.)
+  - autocomplete — on/off to enable or disable browser autocomplete
+
+<input> — creates different types of fields depending on the type attribute
+ Attributes:
+  - type — kind of input (text, password, email, number, checkbox, radio, file, date, etc.)
+  - name — name of the field (key in the submitted data)
+  - value — default value of the field
+  - placeholder — hint text displayed when empty
+  - required — makes the field mandatory
+  - readonly — prevents editing
+  - disabled — makes it unusable and not submitted
+  - maxlength — max characters allowed
+  - min / max — limits for number/date inputs
+
+<textarea> — bigger box for longer text input
+ Attributes:
+  - name — name of the field
+  - rows — visible number of lines
+  - cols — width in characters
+  - placeholder — hint text
+  - required — makes it mandatory
+  - readonly — prevents editing
+  - disabled — makes it unusable
+
+<select> — creates a dropdown menu
+ Attributes:
+  - name — name of the field
+  - multiple — allows selecting more than one option
+  - required — makes it mandatory
+  - disabled — makes it unusable
+  - size — number of visible options without scrolling
+
+<option> — single choice inside a dropdown
+ Attributes:
+  - value — value sent to server when selected
+  - selected — pre-selects this option
+  - disabled — makes it unselectable
+
+<label> — describes an input fields
+ Attributes:
+  - for — ID of the input it’s linked to
+
+<button> — clickable button (submit, reset, or just a normal button)
+ Attributes:
+  - type — button, submit, or reset
+  - name — name of the button (sent with form)
+  - value — value sent when clicked
+  - disabled — makes it unclickable
+
+<fieldset> — groups related inputs together inside a box
+ Attributes:
+  - disabled — disables all fields inside
+  - form — associates this group with a specific form
+
+<legend> — title or label for a <fieldset> group

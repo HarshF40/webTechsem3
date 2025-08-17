@@ -1,0 +1,18 @@
+h1, h2, h3, h4 {
+  color: yellow;
+}
+a {
+  color: brown;
+}
+a:hover {
+  color: red;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.justify {
+  text-align: justify;
+}

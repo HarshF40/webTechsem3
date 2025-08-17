@@ -1,0 +1,23 @@
+@import url("extra.css");
+* {
+  color: white;
+ }
+body {
+  font-family: Arial, sans-serif;
+}
+table {
+  border-collapse: collapse;
+}
+th, td {
+  padding: 8px;
+}
+footer {
+  background-color: #0a0020;
+  padding: 10px;
+}
+main {
+  text-align: center;
+}
+section p {
+  text-align: justify;
+}
